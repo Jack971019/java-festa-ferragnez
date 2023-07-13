@@ -15,9 +15,24 @@ public class CheckGuest {
 
         boolean guestpresent = false;
 
-        for(int i=0; i< GuestList.length; i++){
+        /* for(int i=0; i< GuestList.length; i++){
             if(GuestList[i].equals(name)){
                 guestpresent = true;
+            }
+        }
+
+         */
+
+        // Check guest ciclo while
+
+        int i = 0;
+
+        while(i< GuestList.length){
+            if(name.equals(GuestList[i])){
+                guestpresent = true;
+                break;
+            } else{
+                i++;
             }
         }
 
@@ -28,6 +43,10 @@ public class CheckGuest {
         } else{
             System.out.println("Mi spiace non può entrare");
         }
+
+
+
+
 
 
 
